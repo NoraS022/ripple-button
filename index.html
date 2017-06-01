@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ripple button</title>
+
+	<!-- - Button ripple library - -->
+	<link href="rippleButton/sheet.css" rel="stylesheet" type="text/css">
+	<script src="rippleButton/script.js" type="text/javascript"></script>
+
+	<!-- Prototype specific style -->
+	<style type="text/css">
+		html, body{
+			padding: 0;
+			margin: 0;
+			background-color: #333;
+		}
+		button{
+			position: relative;
+			overflow: hidden;
+			font-size: 24px;
+			padding: 1em 2em;
+			margin: 3px;
+			border: 0px;
+			outline: 0;
+			color: #fff;
+			background-color: #2196F3;
+			border-radius: 0.15em;
+			box-shadow: 0 0 8px rgba(0,0,0, 0.3);
+		}
+		#button1, #button2{
+			margin-top: 10%;
+			margin-left: 10%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Prototype specific structure -->
+	<button id="button1">Temp</button>
+	<button id="button2">Click meeeee!</button>
+
+	<!-- Prototype specific script -->
+	<script type="text/javascript">
+		rippleButton(document.getElementById('button1'), 500);
+		rippleButton(document.getElementById('button2'), 700, 'rgba(0,0,0,0.5)');
+	</script>
+</body>
+</html>

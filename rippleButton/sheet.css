@@ -1,0 +1,25 @@
+.btnRipple{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255, 0.7);
+	position: absolute;
+	
+	opacity: 1;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	transform: scale(0);
+	
+	-webkit-animation: btnRipple 500ms linear;
+	-moz-animation: btnRipple 500ms linear;
+	animation: btnRipple 500ms linear;
+}
+
+@keyframes btnRipple{
+	to{
+		opacity: 0;
+		-webkit-transform: scale(2.5);
+		-moz-transform: scale(2.5);
+		transform: scale(2.5);
+	}
+}
